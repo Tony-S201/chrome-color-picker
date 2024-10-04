@@ -90,10 +90,10 @@
         event.preventDefault();
         const colorText = colorDisplay.innerHTML.split('<br>')[0].split(': ')[1];
         navigator.clipboard.writeText(colorText).then(() => {
-          alert('Capturer color : ' + colorText);
+          alert('Captured color : ' + colorText);
           togglePicker(); // Disable picker after copy.
         }, (err) => {
-          console.error('Erreur lors de la copie : ', err);
+          console.error('Copy error : ', err);
         });
     }
   
