@@ -1,0 +1,29 @@
+{
+  "manifest_version": 3,
+  "name": "Color Picker Lite",
+  "description": "Select a color and get his HEX code, instantly.",
+  "version": "1.0",
+  "icons": {
+    "16": "images/icon-picker.jpg",
+    "32": "images/icon-picker.jpg",
+    "48": "images/icon-picker.jpg",
+    "128": "images/icon-picker.jpg"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "clipboardWrite",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "js": ["content-script.js"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
