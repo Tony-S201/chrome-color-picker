@@ -4,10 +4,10 @@
   "description": "Select a color and get his HEX code, instantly.",
   "version": "1.0",
   "icons": {
-    "16": "images/icon-picker.jpg",
-    "32": "images/icon-picker.jpg",
-    "48": "images/icon-picker.jpg",
-    "128": "images/icon-picker.jpg"
+    "16": "images/icon_lite_16.jpg",
+    "32": "images/icon_lite_32.jpg",
+    "48": "images/icon_lite_48.jpg",
+    "128": "images/icon_lite_128.jpg"
   },
   "action": {
     "default_popup": "popup.html"
